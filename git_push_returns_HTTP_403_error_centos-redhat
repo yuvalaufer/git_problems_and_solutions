@@ -1,0 +1,16 @@
+problem: 
+while trying to perform git push on Centos or Redhat I get the following error:
+error: The requested URL returned error: 403 while accessing https://github.com/<my_user_name>/<repo_name1>/info/refs
+e.g.: The requested URL returned error: 403 while accessing https://github.com/yuvalaufer/test1_repo/info/refs
+
+solution: 
+1. go to your repo's .git/config file
+2. add the following:
+ <my_user_name>@
+before github.com
+in the url line.
+
+e.g.:
+change: url = https://github.com/yuvalaufer/test1
+to: url = https://yuvalaufer@github.com/yuvalaufer/test1
+
