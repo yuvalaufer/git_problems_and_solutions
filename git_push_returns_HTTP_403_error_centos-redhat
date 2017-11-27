@@ -4,6 +4,10 @@ error: The requested URL returned error: 403 while accessing https://github.com/
 e.g.: The requested URL returned error: 403 while accessing https://github.com/yuvalaufer/test1_repo/info/refs
 
 solution: 
+
+on redhat:
+-----------
+
 1. go to your repo's .git/config file
 2. add the following:
  <my_user_name>@
@@ -14,3 +18,10 @@ e.g.:
 change: url = https://github.com/yuvalaufer/test1
 to: url = https://yuvalaufer@github.com/yuvalaufer/test1
 
+
+on centos:
+-----------
+1. perform the same as in redhat
+2. run the following command:
+
+	unset SSH_ASKPASS
