@@ -19,7 +19,7 @@ change: url = https://github.com/yuvalaufer/test1
 to: url = https://yuvalaufer@github.com/yuvalaufer/test1
 
 
-on centos:
+on centos (version lower then 7):
 -----------
 1. perform the same as in redhat
 2. run the following command:
